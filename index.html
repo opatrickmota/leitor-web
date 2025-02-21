@@ -16,17 +16,18 @@
     <body>
 
         <header>
-            <h1>Read Without PayWall</h1>
+            <h1 id="header">Read Without PayWall</h1>
         </header>
 
         <main>
             <div style="width: 100%; height: 100%;">
 
-                <h2>Insert the link</h2>
+                <h2 id="title">Insert the link</h2>
 
-                <input type="text" id="urlInput" placeholder="https://website.com">
-                <button onclick="openLink()">OPEN</button>
-
+                <div id="linkSection">
+                    <input type="text" id="urlInput" placeholder="https://website.com">
+                    <button onclick="openLink()">OPEN</button>
+                </div>
                 <iframe id="webView" src="" style="display: none;"></iframe>
 
                 <script>
@@ -38,6 +39,8 @@
                             }
                             document.getElementById('webView').src = url;
                             document.getElementById('webView').style.display = 'block';
+                            document.getElementById('header').style.display = 'none';
+                            document.getElementById('title').style.display = 'none';
                         }
                     }
                 </script>
