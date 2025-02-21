@@ -50,22 +50,15 @@ input, button {
 }
 
 iframe { 
-    width: 90vw; 
-    height: 85vh; 
+    width: 100vw; 
+    height: 100vh; 
     border: 1px solid #ccc; 
-    margin-top: 8px;
-    margin-bottom: 24px;
 }
 
 input{ 
     border: 1px solid #000;
     border-radius: 8px;
     min-width: 300px;
-    opacity: 0.5;
-}
-
-input:focus{
-    opacity: 1;
 }
 
 button{
@@ -82,9 +75,8 @@ button:hover{
     background-color: #000;
     color: #FFF;
     cursor: pointer;
+    border: 1px solid #FFF;
 }
-
-
 
 @media only screen and (max-width: 1300px) {
     main{
